@@ -28,6 +28,7 @@ body {
 h1 {
     font-size: var(--h1-text-size);
     font-weight: var(--bold-weight);
+    text-align: center;
 }
 
 h2 {
@@ -73,6 +74,7 @@ a:active {
     padding: 10px;
     border-radius: 3px;
     border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 4px 3px 20px 0px rgba(0, 0, 0, 0.2);
     transition: opacity 0.2s;
 }
 
@@ -82,6 +84,7 @@ a:active {
     cursor: pointer;
     /*reduce button opacity to 80%*/
     opacity: 0.8;
+    box-shadow: none;
 }
 
 .navigation-list__item--active {
@@ -94,14 +97,17 @@ a:active {
     width: 250px;
     margin-right: 40px;
     border-radius: 50%;
-
 }
 
 .profile,
-.about-summary {
-    max-width: 700px;
+.about {
+    max-width: 70%;
     margin: 0 auto;
     text-align: center;
+}
+
+.about-summary {
+    text-align: left;
 }
 
 .page-header {
@@ -132,17 +138,34 @@ a:active {
     margin-left: 15px;
 }
 
-#contact-form {
-    float: right;
-    text-align: right;
+.italics {
+    font-style: italic;
 }
 
-.contact-info {
-    max-width: 700px;
+.contact-intro {
+    width: 50%;
     margin: 0 auto;
     text-align: center;
 }
 
+.contact-info-wrapper {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.contact-info-wrapper__item {
+    flex: auto;
+    padding: 20px;
+}
+
+.contact-info {
+    text-align: left;
+}
+
+#contact-form {
+    text-align: right;
+}
 
 .page-footer {
     clear: both;
@@ -215,7 +238,7 @@ a:active {
     }
 
     50% {
-        fill:#e88e20; 
+        fill: #e88e20;
     }
 
     100% {
