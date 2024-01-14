@@ -71,11 +71,16 @@ a:active {
     color: var(--dark-background-text-color);
     text-decoration: none;
     /*adds spacing and border to button*/
+    display:inline-block;
     padding: 10px;
     border-radius: 3px;
     border-bottom: 2px solid rgba(0, 0, 0, 0.3);
     box-shadow: 4px 3px 20px 0px rgba(0, 0, 0, 0.2);
     transition: opacity 0.2s;
+}
+
+.button:visited{
+    color:var(--dark-background-text-color);
 }
 
 .button:hover,
