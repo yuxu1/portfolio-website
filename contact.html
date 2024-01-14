@@ -40,32 +40,37 @@
             </ul>
         </nav>
     </header>
-    <div class="contact-info">
-        <h1>Contact</h1>
-        <div>
-            CareerFoundry GmbH<br>
-            Lohmühlenstraße 65 <br>
-            12435 Berlin<br>
-            Deutschland<br>
-            <br>
+    <div class="contact-intro">
+        <h1>Contact Me</h1>
+        <p>
+            If you have any questions, feedback, or job opportunities for me, please reach out! <br>
+            I would love to hear from you! <br>
+            Email communication is preferred, but feel free to contact me using any of the methods below. I will respond
+            to you as soon as I can.
+        </p>
+    </div>
+    <div class="contact-info-wrapper">
+
+        <div class="contact-info contact-info-wrapper__item">
             Tel <a href="tel:+1 415 746 0579">+1 415 746 0579</a><br>
             Skype <a href="skype:live:yufan.xu">live:yufan.xu</a><br>
             Email <a href="mailto:yufanx8@gmail.com">yufanx8@gmail.com</a><br>
             <a href=" mailto:yufanx8@gmail.com">Contact Me</a>
         </div>
+
+        <form class="contact-info-wrapper__item" action="" method="post" id="contact-form">
+            <label class="standard-label" for="contact-email">E-mail:</label>
+            <input type="email" id="contact-email" required><br>
+
+            <label class="standard-label" for="contact-phone">Telephone:</label>
+            <input type="tel" id="contact-phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}"><br>
+
+            <label class="standard-label" for="contact-message">Message:</label>
+            <textarea maxlength="240" id="contact-message" required></textarea><br>
+
+            <input type="submit" value="Send message">
+        </form>
     </div>
-    <form action="" method="post" id="contact-form">
-        <label class="standard-label" for="contact-email">E-mail:</label>
-        <input type="email" id="contact-email" required><br>
-
-        <label class="standard-label" for="contact-phone">Telephone:</label>
-        <input type="tel" id="contact-phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}"><br>
-
-        <label class="standard-label" for="contact-message">Message:</label>
-        <textarea maxlength="240" id="contact-message" required></textarea><br>
-
-        <input type="submit" value="Send message">
-    </form>
 
     <footer class="page-footer">
         <p>Find me on</p>
