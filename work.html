@@ -22,7 +22,7 @@
     <!--header including logo and main navigation menu-->
     <header class="page-header">
         <!--insert logo here-->
-        <img class="page-header__item profile-logo" src="img/profile-logo.png" alt="personal logo of Yufan Xu">
+        <a href="index.html"><img class="page-header__item profile-logo" src="img/profile-logo.png" alt="personal logo of Yufan Xu"></a>
         <nav class="main-navigation page-header__item">
             <ul role="menubar" class="navigation-list">
                 <li role="presentation">
@@ -48,46 +48,67 @@
         <div class="project-list">
             <!--insert projects here-1 project per grid item-->
             <div class="project-list__item">
-                <h2>Project 1</h2>
+                <h2>Pokedex App</h2>
+                <img src="img/pokedex-screenshot.png" alt="screenshot of Pokedex app" width="98%">
                 <p>
-                    Project 1 summary will go here.
+                    A simple JavaScript app that loads data from an external API and enables the viewing of data points in detail
                 </p>
-                <a href="#">See project on GitHub</a>
+                <p>
+                    Technologies: JavaScript, Bootstrap, jQuery
+                </p>
+                <a href="https://github.com/yuxu1/Pokedex" target="_blank">See project on GitHub</a><br>
+                <a href="https://yuxu1.github.io/Pokedex/" target="_blank">View hosted app</a>
             </div>
             <div class="project-list__item">
-                <h2>Project 2</h2>
+                <h2>myFlix API</h2>
+                <img src="img/myFlix-api-screenshot.png" alt="screenshot of myFlix database for API" width="98%">
                 <p>
-                    Project 2 summary will go here.
+                    A REST API for a movies web app that interacts with a database that stores data about different movies
                 </p>
-                <a href="#">See project on GitHub</a>
+                <p>
+                    Technologies: Express, Node.js, JavaScript, MongoDB
+                </p>
+                <a href="https://github.com/yuxu1/movie_api" target="_blank">See project on GitHub</a><br>
             </div>
             <div class="project-list__item">
-                <h2>Project 3</h2>
+                <h2>myFlix Client</h2>
+                <img src="img/myFlix-client-screenshot.png" alt="screenshot of myFlix client app" width="98%">
                 <p>
-                    Project 3 summary will go here.
+                    The client-side of the movies web app built using React based on its existing server-side code (REST API and database)
                 </p>
-                <a href="#">See project on GitHub</a>
+                <p>
+                    Technologies: JavaScript, React, React-Bootstrap, Netlify, Parcel
+                </p>
+                <a href="https://github.com/yuxu1/myFlix-client" target="_blank">See project on GitHub</a><br>
+                <a href="https://yx-projects-myflix.netlify.app" target="_blank">View hosted app</a>
             </div>
             <div class="project-list__item">
-                <h2>Project 4</h2>
+                <h2>Meet App</h2>
+                <img src="img/meet-screenshot.png" alt="screenshot of Meet app" width="98%">
                 <p>
-                    Project 4 summary will go here.
+                    A serverless, progressive web app built with React following a test-driven development technique to fetch events from the Google Calendar API
                 </p>
-                <a href="#">See project on GitHub</a>
+                <p>
+                    Technologies: JavaScript, React, Recharts, Jest, Cucumber, Puppeteer, AWS Lambda
+                </p>
+                <a href="https://github.com/yuxu1/meet" target="_blank">See project on GitHub</a><br>
+                <a href="https://yuxu1.github.io/meet/" target="_blank">View hosted app</a>
             </div>
             <div class="project-list__item">
                 <h2>Project 5</h2>
                 <p>
                     Project 5 summary will go here.
                 </p>
-                <a href="#">See project on GitHub</a>
+                <a href="#">See project on GitHub</a><br>
+                <a href="#">View hosted app</a>
             </div>
             <div class="project-list__item">
                 <h2>Project 6</h2>
                 <p>
                     Project 6 summary will go here.
                 </p>
-                <a href="#">See project on GitHub</a>
+                <a href="#">See project on GitHub</a><br>
+                <a href="#">View hosted app</a>
             </div>
         </div>
     </section>
@@ -95,9 +116,13 @@
     <footer class="page-footer">
         <p>Find me on</p>
         <div class="social-media">
-        <img src="img/github-logo.svg" alt="Github-logo">
+        <a href="https://github.com/yuxu1" target="_blank">
+            <img src="img/github-logo.svg" alt="Github-logo">
+        </a>
         <img src="img/twitter-logo.svg" alt="Twitter-logo">
-        <img src="img/linkedin-logo.svg" alt="LinkedIn-logo">
+        <a href="https://www.linkedin.com/in/yufanxu/" target="_blank">
+            <img src="img/linkedin-logo.svg" alt="LinkedIn-logo">
+        </a>
         </div>
     </footer>
     <script src="js/tota11y.min.js"></script>
