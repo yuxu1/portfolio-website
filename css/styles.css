@@ -153,19 +153,11 @@ a:active {
     text-align: center;
 }
 
-.contact-info-wrapper {
+.contact-info {
     width: 50%;
     margin: 0 auto;
-    display: flex;
-}
-
-.contact-info-wrapper__item {
-    flex: auto;
-    padding: 20px;
-}
-
-.contact-info {
-    text-align: left;
+    text-align: center;
+    padding: 50px;
 }
 
 #contact-form {
