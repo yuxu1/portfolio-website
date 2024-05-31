@@ -39,6 +39,7 @@ h2 {
 h3 {
     font-size: var(--h3-text-size);
     font-weight: var(--bold-weight);
+    text-align: center;
 }
 
 a {
@@ -153,19 +154,11 @@ a:active {
     text-align: center;
 }
 
-.contact-info-wrapper {
+.contact-info {
     width: 50%;
     margin: 0 auto;
-    display: flex;
-}
-
-.contact-info-wrapper__item {
-    flex: auto;
-    padding: 20px;
-}
-
-.contact-info {
-    text-align: left;
+    text-align: center;
+    padding: 50px;
 }
 
 #contact-form {
@@ -202,6 +195,7 @@ a:active {
     width: auto;
     min-height: auto;
     margin: 0;
+    padding: 2%;
 }
 
 /*responsiveness of project list for smaller screensizes*/
@@ -230,6 +224,19 @@ a:active {
     .project-list {
         grid-template-columns: 1fr;
     }
+}
+
+.project-screenshots img {
+    height: 250px;
+    max-width: 100%;
+    display: flex;
+    margin: auto;
+}
+
+.project-links {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
 }
 
 .sf-graphic {
@@ -284,4 +291,13 @@ a:active {
 
 .sailboat {
     animation: 20s sailboat-moving infinite normal linear;
+}
+
+.toolbelt li {
+    float:left;
+    width: 50%;
+}
+
+#resume-button {
+    margin-top: 20px;
 }

@@ -15,14 +15,15 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 
 <body>
     <!--header including logo and main navigation menu-->
     <header class="page-header">
         <!--insert logo here-->
-        <a href="index.html"><img class="page-header__item profile-logo" src="img/profile-logo.png" alt="personal logo of Yufan Xu"></a>
+        <a href="index.html"><img class="page-header__item profile-logo" src="img/profile-logo.png"
+                alt="personal logo of Yufan Xu"></a>
         <nav class="main-navigation page-header__item">
             <ul role="menubar" class="navigation-list">
                 <li role="presentation">
@@ -49,66 +50,134 @@
             <!--insert projects here-1 project per grid item-->
             <div class="project-list__item">
                 <h2>Pokedex App</h2>
-                <img src="img/pokedex-screenshot.png" alt="screenshot of Pokedex app" width="98%">
+                <div class="project-screenshots">
+                    <img src="img/pokedex-screenshot.png" alt="screenshot of Pokedex app">
+                </div>
                 <p>
-                    A simple JavaScript app that loads data from an external API and enables the viewing of data points in detail
+                    A Pokedex app that provides details about the original 150 Pokemon.
+                </p>
+                <p>
+                    This is a simple JavaScript app that loads data from an external API and enables the viewing of data
+                    points in detail.
                 </p>
                 <p>
                     Technologies: JavaScript, Bootstrap, jQuery
                 </p>
-                <a href="https://github.com/yuxu1/Pokedex" target="_blank">See project on GitHub</a><br>
-                <a href="https://yuxu1.github.io/Pokedex/" target="_blank">View hosted app</a>
+                <div class="project-links">
+                    <a href="https://github.com/yuxu1/Pokedex" target="_blank">See project on GitHub</a><br>
+                    <a href="https://yuxu1.github.io/Pokedex/" target="_blank">View hosted app</a>
+                </div>
             </div>
             <div class="project-list__item">
                 <h2>myFlix API</h2>
-                <img src="img/myFlix-api-screenshot.png" alt="screenshot of myFlix database for API" width="98%">
+                <div class="project-screenshots">
+                    <img src="img/myFlix-api-screenshot.png" alt="screenshot of myFlix database for API">
+                </div>
                 <p>
-                    A REST API for a movies web app that interacts with a database that stores data about different movies
+                    The backend of an app that stores information about movies and user profiles so users can utilize it
+                    to look up details about different movies.
                 </p>
                 <p>
-                    Technologies: Express, Node.js, JavaScript, MongoDB
+                    Movie and user data are stored in a MongoDB database, and this REST API interacts with the database
+                    to allow users to retreive movie details, authenticate themselves against the user database, and
+                    update their user profiles including saving and removing movies from their list of favorites.
                 </p>
-                <a href="https://github.com/yuxu1/movie_api" target="_blank">See project on GitHub</a><br>
+                <p>
+                    Technologies: JavaScript, Express, Node.js, MongoDB, Mongoose, body-parser, express-validator,
+                    passport, Postman, Heroku
+                </p>
+                <div class="project-links">
+                    <a href="https://github.com/yuxu1/movie_api" target="_blank">See project on GitHub</a><br>
+                    <a href="https://my-flix-project-b74d36752ec6.herokuapp.com/documentation.html" target="_blank">View
+                        hosted API</a>
+                </div>
             </div>
             <div class="project-list__item">
-                <h2>myFlix Client</h2>
-                <img src="img/myFlix-client-screenshot.png" alt="screenshot of myFlix client app" width="98%">
+                <h2>myFlix React Client</h2>
+                <div class="project-screenshots">
+                    <img src="img/myFlix-client-screenshot.png" alt="screenshot of myFlix client app">
+                </div>
                 <p>
-                    The client-side of the movies web app built using React based on its existing server-side code (REST API and database)
+                    The client side of the movies web app where users can create a profile to view data on movies, save
+                    those interested to their favorites, and update their user profile.
+                </p>
+                <p>
+                    This was built using the React library and was based on its existing server-side code (REST API and
+                    database).
                 </p>
                 <p>
                     Technologies: JavaScript, React, React-Bootstrap, Netlify, Parcel
                 </p>
-                <a href="https://github.com/yuxu1/myFlix-client" target="_blank">See project on GitHub</a><br>
-                <a href="https://yx-projects-myflix.netlify.app" target="_blank">View hosted app</a>
+                <div class="project-links">
+                    <a href="https://github.com/yuxu1/myFlix-client" target="_blank">See project on GitHub</a><br>
+                    <a href="https://yx-projects-myflix.netlify.app" target="_blank">View hosted app</a>
+                </div>
             </div>
             <div class="project-list__item">
                 <h2>Meet App</h2>
-                <img src="img/meet-screenshot.png" alt="screenshot of Meet app" width="98%">
+                <div class="project-screenshots">
+                    <img src="img/meet-screenshot.png" alt="screenshot of Meet app">
+                </div>
                 <p>
-                    A serverless, progressive web app built with React following a test-driven development technique to fetch events from the Google Calendar API
+                    An app that fetches and displays data (including data visualization in form of charts) from the
+                    Google Calendar API so users can search for and see details about upcoming events in their city.
+                </p>
+                <p>
+                    This is a serverless, progressive web app built with React following a test-driven development
+                    technique.
+                    It is built to work offline (with limited capabilities) and can be installed on both mobile devices
+                    and computers.
                 </p>
                 <p>
                     Technologies: JavaScript, React, Recharts, Jest, Cucumber, Puppeteer, AWS Lambda
                 </p>
-                <a href="https://github.com/yuxu1/meet" target="_blank">See project on GitHub</a><br>
-                <a href="https://yuxu1.github.io/meet/" target="_blank">View hosted app</a>
+                <div class="project-links">
+                    <a href="https://github.com/yuxu1/meet" target="_blank">See project on GitHub</a><br>
+                    <a href="https://yuxu1.github.io/meet/" target="_blank">View hosted app</a>
+                </div>
             </div>
             <div class="project-list__item">
-                <h2>Project 5</h2>
+                <h2>Chat App</h2>
+                <div class="project-screenshots">
+                    <img src="img/chat-screenshot.jpeg" alt="screenshot of Chat app">
+                </div>
                 <p>
-                    Project 5 summary will go here.
+                    A mobile app with a chat interface that allows users to send text messages, images, and share
+                    geolocation with others once inside the chatroom.
                 </p>
-                <a href="#">See project on GitHub</a><br>
-                <a href="#">View hosted app</a>
+                <p>
+                    This is a native app built using React Native that stores chat data both locally and in the cloud,
+                    and allows reading of old messages when user is offline.
+                </p>
+                <p>
+                    Technologies: React Native, Expo, Gifted Chat, Android Emulator, Google Firestore Database, Google
+                    Firebase authentication, Firebase Cloud Storage, Expo ImagePicker API, Expo Location API,
+                    react-native-maps
+                </p>
+                <div class="project-links">
+                    <a href="https://github.com/yuxu1/chat" target="_blank">See project on GitHub</a><br>
+                </div>
             </div>
             <div class="project-list__item">
-                <h2>Project 6</h2>
+                <h2>myFlix Angular Client</h2>
+                <div class="project-screenshots">
+                    <img src="img/angular-client-screenshot.png" alt="screenshot of myFlix Angular client">
+                </div>
                 <p>
-                    Project 6 summary will go here.
+                    The client side of the movies web app where users can create a profile to view data on movies, save
+                    those interested to their favorites, and update their user profile.
                 </p>
-                <a href="#">See project on GitHub</a><br>
-                <a href="#">View hosted app</a>
+                <p>
+                    This version of the client side of the myFlix app was built using the Angular framework.
+                </p>
+                <p>
+                    Technologies: Angular, Angular Material, TypeDoc
+                </p>
+                <div class="project-links">
+                    <a href="https://github.com/yuxu1/myFlix-Angular-client" target="_blank">See project on
+                        GitHub</a><br>
+                    <a href="https://yuxu1.github.io/myFlix-Angular-client/welcome" target="_blank">View hosted app</a>
+                </div>
             </div>
         </div>
     </section>
@@ -116,13 +185,13 @@
     <footer class="page-footer">
         <p>Find me on</p>
         <div class="social-media">
-        <a href="https://github.com/yuxu1" target="_blank">
-            <img src="img/github-logo.svg" alt="Github-logo">
-        </a>
-        <img src="img/twitter-logo.svg" alt="Twitter-logo">
-        <a href="https://www.linkedin.com/in/yufanxu/" target="_blank">
-            <img src="img/linkedin-logo.svg" alt="LinkedIn-logo">
-        </a>
+            <a href="https://github.com/yuxu1" target="_blank">
+                <img src="img/github-logo.svg" alt="Github-logo">
+            </a>
+            <img src="img/twitter-logo.svg" alt="Twitter-logo">
+            <a href="https://www.linkedin.com/in/yufanxu/" target="_blank">
+                <img src="img/linkedin-logo.svg" alt="LinkedIn-logo">
+            </a>
         </div>
     </footer>
     <script src="js/tota11y.min.js"></script>
