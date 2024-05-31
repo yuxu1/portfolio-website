@@ -194,6 +194,7 @@ a:active {
     width: auto;
     min-height: auto;
     margin: 0;
+    padding: 2%;
 }
 
 /*responsiveness of project list for smaller screensizes*/
@@ -222,6 +223,19 @@ a:active {
     .project-list {
         grid-template-columns: 1fr;
     }
+}
+
+.project-screenshots img {
+    height: 250px;
+    max-width: 100%;
+    display: flex;
+    margin: auto;
+}
+
+.project-links {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
 }
 
 .sf-graphic {
