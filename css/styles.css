@@ -1,7 +1,7 @@
 :root {
     --text-color: #2b2b2b;
     --primary-color: #07c4ce;
-    --secondary-color: #4a12e3;
+    --secondary-color: #583ca5;
     --primary-color-darker: #077085;
     --light-background-color: #e2f7f9;
     --dark-background-text-color: #fff;
@@ -308,6 +308,10 @@ a:active {
     width: 50%;
 }
 
-#resume-button {
-    margin-top: 20px;
+#resume-button-view {
+    margin-top: 25px;
+}
+
+#resume-button-download {
+    background-color: var(--secondary-color);
 }
