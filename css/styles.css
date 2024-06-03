@@ -172,6 +172,16 @@ a:active {
     text-align: center;
 }
 
+.social-media {
+    display: flex;
+    margin: auto;
+}
+
+.social-media img{
+    width: 30px;
+    margin: 5px;
+}
+
 /*grid fallback start*/
 .project-list__item {
     display: inline-block;
