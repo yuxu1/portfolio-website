@@ -1,7 +1,7 @@
 :root {
     --text-color: #2b2b2b;
     --primary-color: #07c4ce;
-    --secondary-color: #583ca5;
+    --secondary-color: #6c5291;
     --primary-color-darker: #077085;
     --light-background-color: #e2f7f9;
     --dark-background-text-color: #fff;
@@ -78,6 +78,8 @@ a:active {
     border-bottom: 2px solid rgba(0, 0, 0, 0.3);
     box-shadow: 4px 3px 20px 0px rgba(0, 0, 0, 0.2);
     transition: opacity 0.2s;
+    border-radius: 15px;
+    cursor: pointer;
 }
 
 .button:visited{
@@ -206,6 +208,7 @@ a:active {
     min-height: auto;
     margin: 0;
     padding: 2%;
+    border-radius: 15px;
 }
 
 /*responsiveness of project list for smaller screensizes*/
@@ -245,8 +248,10 @@ a:active {
 
 .project-links {
     display: flex;
-    flex-direction: column;
-    align-items:flex-end;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 5px;
 }
 
 .sf-graphic {
@@ -313,5 +318,47 @@ a:active {
 }
 
 #resume-button-download {
+    background-color: var(--secondary-color);
+}
+
+dialog {
+    padding: 15px 30px;
+    border: none;
+    left: 10px;
+    right: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+    justify-content: center;
+    background-color: var(--light-background-color);
+}
+
+.project-heading{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+#expand-button {
+    background-color: transparent;
+    height:50px;
+}
+
+#expand-button img {
+    justify-content: center;
+    height:100%;
+}
+
+#close-button {
+    background-color: rgb(231, 231, 231);
+    height: 50px;
+}
+
+#close-button img {
+    justify-content: center;
+    height:100%;
+}
+
+.app-link {
     background-color: var(--secondary-color);
 }
