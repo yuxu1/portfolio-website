@@ -18,11 +18,7 @@
             href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
             rel="stylesheet"
         />
-        <link
-            rel="stylesheet"
-            type="text/css"
-            href="css/style.production.css"
-        />
+        <link rel="stylesheet" type="text/css" href="css/style.production.css"/>
     </head>
 
     <body>
@@ -41,7 +37,7 @@
                         <a
                             href="index.html"
                             role="menuitem"
-                            class="navigation-list__item navigation-list__item--active"
+                            class="navigation-list__item"
                             >Home</a
                         >
                     </li>
@@ -57,7 +53,7 @@
                         <a
                             href="work.html"
                             role="menuitem"
-                            class="navigation-list__item"
+                            class="navigation-list__item navigation-list__item--active"
                             >Work</a
                         >
                     </li>
@@ -80,110 +76,40 @@
                 <!--insert projects here-1 project per grid item-->
                 <div class="project-list__item">
                     <div class="project-heading">
-                        <h2>Pokedex App</h2>
-                        <button open-pokedex-modal class="button" id="expand-button"><img src="img/expand_icon.svg"/></button>
-                    </div>
-
-                    <div class="project-screenshots">
-                        <img
-                            src="img/pokedex-screenshot.png"
-                            alt="screenshot of Pokedex app"
-                        />
-                    </div>
-                    <div class="project-links">
-                        <a
-                            href="https://github.com/yuxu1/Pokedex"
-                            target="_blank"
-                            class="button"
-                            >View Code</a
-                        ><br />
-                        <a
-                            href="https://yuxu1.github.io/Pokedex/"
-                            target="_blank"
-                            class="button app-link"
-                            >View App</a
-                        >
-                    </div>
-
-                    <dialog pokedex-modal>
-                        <div class="project-heading">
-                            <h2>Pokedex App</h2>
-                            <button close-pokedex-modal class="button" id="close-button"><img src="img/close-icon.svg"/></button>
-                        </div>
-                        <div class="project-screenshots">
-                            <img
-                                src="img/pokedex-screenshot.png"
-                                alt="screenshot of Pokedex app"
-                            />
-                        </div>
-                        <p>
-                            A simple Pokedex app that provides details about the
-                            original 150 Pokemon, including name, an image, height, weight, and type(s).
-                            Users can also search for a Pokemon by name.
-                        </p>
-                        <p>
-                            This is a simple JavaScript app that loads data from
-                            an external API and enables the viewing of data
-                            points in detail.
-                        </p>
-                        <p>Technologies: JavaScript, Bootstrap, jQuery</p>
-                    </dialog>
-                </div>
-
-                <div class="project-list__item">
-                    <div class="project-heading">
-                        <h2>myFlix API</h2>
-                        <button open-myflix-api-modal class="button" id="expand-button"><img src="img/expand_icon.svg"/></button>
+                        <h2>Recipe App (Web App Ver.)</h2>
+                        <button open-web-recipe-modal class="button" id="expand-button"><img src="img/expand_icon.svg"/></button>
                     </div>
                     <div class="project-screenshots">
-                        <img
-                            src="img/myFlix-api-screenshot.png"
-                            alt="screenshot of myFlix database for API"
-                        />
+                        <img src="img/recipe-app-screenshot.png" alt="screenshot of recipe app"/>
                     </div>
                     <div class="project-links">
-                        <a
-                            href="https://github.com/yuxu1/movie_api"
-                            target="_blank"
-                            class="button"
-                            >View Code</a
-                        ><br />
-                        <a
-                            href="https://my-flix-project-b74d36752ec6.herokuapp.com/documentation.html"
-                            target="_blank"
-                            class="button app-link"
-                            >View API</a
-                        >
+                        <a href="https://github.com/yuxu1/recipe_project" target="_blank" class="button">View Code</a><br />
+                        <a href="files/case_study_recipe_app.pdf" class="button" id="case-study-button" target="_blank">Case Study</a> <br/>
+                        <a href="https://sensible-elva-yuxu1-946856e4.koyeb.app/" target="_blank" class="button app-link">View App</a>
                     </div>
-
-                    <dialog myflix-api-modal>
+                    <dialog web-recipe-modal>
                         <div class="project-heading">
-                            <h2>myFlix API</h2>
-                            <button close-myflix-api-modal class="button" id="close-button"><img src="img/close-icon.svg"/></button>
+                            <h2>Recipe App (Web App Version)</h2>
+                            <button close-web-recipe-modal class="button" id="close-button"><img src="img/close-icon.svg"/></button>
                         </div>
                         <div class="project-screenshots">
-                            <img
-                                src="img/myFlix-api-screenshot.png"
-                                alt="screenshot of myFlix database for API"
-                            />
+                            <img src="img/recipe-app-screenshot.png" alt="screenshot of recipe app"/>
                         </div>
                         <p>
-                            The backend of an app that stores information about
-                            movies and user profiles so users can utilize it to look
-                            up details about different movies.
+                            A web application version of a recipe app, which allows registered users to create, view, modify, and delete 
+                            recipes. Users can also search for recipes by recipe name and/or ingredient, as well as see graphic 
+                            representation of the filtered recipes - displaying the cooking time by recipe and the allocation of the 
+                            recipes' difficulty levels. This application has multiple users and allow users to view the profile of 
+                            the user who created a certain recipe and view all recipes by that user.
                         </p>
                         <p>
-                            Movie and user data are stored in a MongoDB database,
-                            and this REST API interacts with the database to allow
-                            users to retreive movie details, authenticate themselves
-                            against the user database, and update their user
-                            profiles including saving and removing movies from their
-                            list of favorites.
+                            This version of the recipe app is a fully fledged web application with multiple users and an admin panel, 
+                            built using the Django web framework. It utilizes a Postgres database hosted through Koyeb and a 
+                            third party app to serve media files.
                         </p>
                         <p>
-                            Technologies: JavaScript, Express, Node.js, MongoDB,
-                            Mongoose, body-parser, express-validator, passport,
-                            Postman, Heroku
+                            Technologies: Python, Django, virtualenvwrapper, pip, SQLite3, PostgreSQL, pandas, matplotlib, 
+                            Cloudinary, Koyeb, WhiteNoise
                         </p>
                     </dialog>
                 </div>
@@ -194,38 +120,23 @@
                         <button open-myflix-react-modal class="button" id="expand-button"><img src="img/expand_icon.svg"/></button>
                     </div>
                     <div class="project-screenshots">
-                        <img
-                            src="img/myFlix-client-screenshot.png"
-                            alt="screenshot of myFlix client app"
-                        />
+                        <img src="img/myFlix-client-screenshot.png" alt="screenshot of myFlix client app"/>
                     </div>
                     <div class="project-links">
-                        <a
-                            href="https://github.com/yuxu1/myFlix-client" target="_blank" class="button"
-                            >View Code</a
-                        ><br />
-                        <a
-                            href="https://yx-projects-myflix.netlify.app"
-                            target="_blank"
-                            class="button app-link"
-                            >View App</a
-                        >
+                        <a href="https://github.com/yuxu1/myFlix-client" target="_blank" class="button">View Code</a><br />
+                        <a href="https://yx-projects-myflix.netlify.app" target="_blank" class="button app-link">View App</a>
                     </div>
-
                     <dialog myflix-react-modal>
                         <div class="project-heading">
                             <h2>myFlix Client (React)</h2>
                             <button close-myflix-react-modal class="button" id="close-button"><img src="img/close-icon.svg"/></button>
                         </div>
                         <div class="project-screenshots">
-                            <img
-                                src="img/myFlix-client-screenshot.png"
-                                alt="screenshot of myFlix client app"
-                            />
+                            <img src="img/myFlix-client-screenshot.png" alt="screenshot of myFlix client app"/>
                         </div>
                         <p>
-                            The client side of the movies web app where users can
-                            create a profile to view data on movies (including movie name, sypnosis, genre, director), save those
+                            The client side of the movies web app where users can create a profile to view 
+                            data on movies (including movie name, sypnosis, genre, director), save those
                             interested to their favorites, and update their user profile.
                         </p>
                         <p>
@@ -245,30 +156,19 @@
                         <button open-meet-modal class="button" id="expand-button"><img src="img/expand_icon.svg"/></button>
                     </div>
                     <div class="project-screenshots">
-                        <img
-                            src="img/meet-screenshot.png"
-                            alt="screenshot of Meet app"
-                        />
+                        <img src="img/meet-screenshot.png" alt="screenshot of Meet app"/>
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/yuxu1/meet" target="_blank" class="button"
-                            >View Code</a
-                        ><br />
-                        <a href="https://yuxu1.github.io/meet/" target="_blank" class="button app-link"
-                            >View App</a
-                        >
+                        <a href="https://github.com/yuxu1/meet" target="_blank" class="button">View Code</a><br/>
+                        <a href="https://yuxu1.github.io/meet/" target="_blank" class="button app-link">View App</a>
                     </div>
-
                     <dialog meet-modal>
                         <div class="project-heading">
                             <h2>Meet App</h2>
                             <button close-meet-modal class="button" id="close-button"><img src="img/close-icon.svg"/></button>
                         </div>
                         <div class="project-screenshots">
-                            <img
-                                src="img/meet-screenshot.png"
-                                alt="screenshot of Meet app"
-                            />
+                            <img src="img/meet-screenshot.png" alt="screenshot of Meet app"/>
                         </div>
                         <p>
                             An app that fetches and displays data (including data
@@ -295,27 +195,18 @@
                         <button open-chat-modal class="button" id="expand-button"><img src="img/expand_icon.svg"/></button>
                     </div>
                     <div class="project-screenshots">
-                        <img
-                            src="img/chat-screenshot.jpeg"
-                            alt="screenshot of Chat app"
-                        />
+                        <img src="img/chat-screenshot.jpeg" alt="screenshot of Chat app"/>
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/yuxu1/chat" target="_blank" class="button"
-                            >View Code</a
-                        ><br />
+                        <a href="https://github.com/yuxu1/chat" target="_blank" class="button">View Code</a><br/>
                     </div>
-
                     <dialog chat-modal>
                         <div class="project-heading">
                             <h2>Chat App</h2>
                             <button close-chat-modal class="button" id="close-button"><img src="img/close-icon.svg"/></button>
                         </div>
                         <div class="project-screenshots">
-                            <img
-                                src="img/chat-screenshot.jpeg"
-                                alt="screenshot of Chat app"
-                            />
+                            <img src="img/chat-screenshot.jpeg" alt="screenshot of Chat app"/>
                         </div>
                         <p>
                             A mobile app with a chat interface that allows users to
@@ -338,24 +229,57 @@
 
                 <div class="project-list__item">
                     <div class="project-heading">
+                        <h2>myFlix API</h2>
+                        <button open-myflix-api-modal class="button" id="expand-button"><img src="img/expand_icon.svg"/></button>
+                    </div>
+                    <div class="project-screenshots">
+                        <img src="img/myFlix-api-screenshot.png" alt="screenshot of myFlix database for API"/>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/yuxu1/movie_api" target="_blank"class="button">View Code</a><br />
+                        <a href="https://my-flix-project-b74d36752ec6.herokuapp.com/documentation.html" target="_blank" class="button app-link">View API</a>
+                    </div>
+
+                    <dialog myflix-api-modal>
+                        <div class="project-heading">
+                            <h2>myFlix API</h2>
+                            <button close-myflix-api-modal class="button" id="close-button"><img src="img/close-icon.svg"/></button>
+                        </div>
+                        <div class="project-screenshots">
+                            <img src="img/myFlix-api-screenshot.png" alt="screenshot of myFlix database for API"/>
+                        </div>
+                        <p>
+                            The backend of an app that stores information about
+                            movies and user profiles so users can utilize it to look
+                            up details about different movies.
+                        </p>
+                        <p>
+                            Movie and user data are stored in a MongoDB database,
+                            and this REST API interacts with the database to allow
+                            users to retreive movie details, authenticate themselves
+                            against the user database, and update their user
+                            profiles including saving and removing movies from their
+                            list of favorites.
+                        </p>
+                        <p>
+                            Technologies: JavaScript, Express, Node.js, MongoDB,
+                            Mongoose, body-parser, express-validator, passport,
+                            Postman, Heroku
+                        </p>
+                    </dialog>
+                </div>
+
+                <div class="project-list__item">
+                    <div class="project-heading">
                         <h2>myFlix Client (Angular)</h2>
                         <button open-myflix-angular-modal class="button" id="expand-button"><img src="img/expand_icon.svg"/></button>
                     </div>
                     <div class="project-screenshots">
-                        <img
-                            src="img/angular-client-screenshot.png"
-                            alt="screenshot of myFlix Angular client"
-                        />
+                        <img src="img/angular-client-screenshot.png" alt="screenshot of myFlix Angular client"/>
                     </div>
                     <div class="project-links">
-                        <a
-                            href="https://github.com/yuxu1/myFlix-Angular-client" target="_blank" class="button"
-                            >View Code</a
-                        ><br />
-                        <a
-                            href="https://yuxu1.github.io/myFlix-Angular-client/welcome" target="_blank" class="button app-link"
-                            >View App</a
-                        >
+                        <a href="https://github.com/yuxu1/myFlix-Angular-client" target="_blank" class="button">View Code</a><br />
+                        <a href="https://yuxu1.github.io/myFlix-Angular-client/welcome" target="_blank" class="button app-link">View App</a>
                     </div>
 
                     <dialog myflix-angular-modal>
@@ -364,10 +288,7 @@
                             <button close-myflix-angular-modal class="button" id="close-button"><img src="img/close-icon.svg"/></button>
                         </div>
                         <div class="project-screenshots">
-                            <img
-                                src="img/angular-client-screenshot.png"
-                                alt="screenshot of myFlix Angular client"
-                            />
+                            <img src="img/angular-client-screenshot.png" alt="screenshot of myFlix Angular client"/>
                         </div>
                         <p>
                             The client side of the movies web app where users can
@@ -390,33 +311,19 @@
                         <button open-CL-recipe-modal class="button" id="expand-button"><img src="img/expand_icon.svg"/></button>
                     </div>
                     <div class="project-screenshots">
-                        <img
-                            src="img/command-line-screenshot.png"
-                            alt="screenshot of recipe app (CLI version)"
-                        />
+                        <img src="img/command-line-screenshot.png" alt="screenshot of recipe app (CLI version)"/>
                     </div>
                     <div class="project-links">
-                        <a
-                            href="https://github.com/yuxu1/Python-Recipe-App/tree/main"
-                            target="_blank"
-                            class="button"
-                            >View Code</a
-                        ><br />
-                        <a href="https://youtu.be/yuWEo8DlnYM" target="_blank" class="button app-link"
-                            >View Recording</a
-                        >
+                        <a href="https://github.com/yuxu1/Python-Recipe-App/tree/main" target="_blank" class="button">View Code</a><br />
+                        <a href="https://youtu.be/yuWEo8DlnYM" target="_blank" class="button app-link">View Recording</a>
                     </div>
-
                     <dialog CL-recipe-modal>
                         <div class="project-heading">
                             <h2>Recipe App (Command Line Ver.)</h2>
                             <button close-CL-recipe-modal class="button" id="close-button"><img src="img/close-icon.svg"/></button>
                         </div>
                         <div class="project-screenshots">
-                            <img
-                                src="img/command-line-screenshot.png"
-                                alt="screenshot of recipe app (CLI version)"
-                            />
+                            <img src="img/command-line-screenshot.png" alt="screenshot of recipe app (CLI version)"/>
                         </div>
                         <p>
                             A recipe application that allows uers to view, create,
@@ -441,65 +348,33 @@
 
                 <div class="project-list__item">
                     <div class="project-heading">
-                        <h2>Recipe App (Web App Ver.)</h2>
-                        <button open-web-recipe-modal class="button" id="expand-button"><img src="img/expand_icon.svg"/></button>
+                        <h2>Pokedex App</h2>
+                        <button open-pokedex-modal class="button" id="expand-button"><img src="img/expand_icon.svg"/></button>
                     </div>
                     <div class="project-screenshots">
-                        <img
-                            src="img/recipe-app-screenshot.png"
-                            alt="screenshot of recipe app"
-                        />
+                        <img src="img/pokedex-screenshot.png" alt="screenshot of Pokedex app"/>
                     </div>
                     <div class="project-links">
-                        <a
-                            href="https://github.com/yuxu1/recipe_project"
-                            target="_blank"
-                            class="button"
-                            >View Code</a
-                        ><br />
-                        <a
-                            href="https://sensible-elva-yuxu1-946856e4.koyeb.app/"
-                            target="_blank"
-                            class="button app-link"
-                            >View App</a
-                        >
+                        <a href="https://github.com/yuxu1/Pokedex" target="_blank" class="button">View Code</a><br />
+                        <a href="https://yuxu1.github.io/Pokedex/" target="_blank" class="button app-link">View App</a>
                     </div>
-
-                    <dialog web-recipe-modal>
+                    <dialog pokedex-modal>
                         <div class="project-heading">
-                            <h2>Recipe App (Web App Version)</h2>
-                            <button close-web-recipe-modal class="button" id="close-button"><img src="img/close-icon.svg"/></button>
+                            <h2>Pokedex App</h2>
+                            <button close-pokedex-modal class="button" id="close-button"><img src="img/close-icon.svg"/></button>
                         </div>
                         <div class="project-screenshots">
-                            <img
-                                src="img/recipe-app-screenshot.png"
-                                alt="screenshot of recipe app"
-                            />
+                            <img src="img/pokedex-screenshot.png" alt="screenshot of Pokedex app"/>
                         </div>
                         <p>
-                            A web application version of a recipe app, which allows
-                            registered users to create, view, modify, and delete
-                            recipes. Users can also search for recipes by recipe
-                            name and/or ingredient, as well as see graphic
-                            representation of the filtered recipes - displaying the
-                            cooking time by recipe and the allocation of the
-                            recipes' difficulty levels. This application has
-                            multiple users and allow users to view the profile of
-                            the user who created a certain recipe and view all
-                            recipes by that user.
+                            A simple Pokedex app that provides details about the original 150 Pokemon, 
+                            including name, an image, height, weight, and type(s). Users can also search for a Pokemon by name.
                         </p>
                         <p>
-                            This version of the recipe app is a fully fledged web
-                            application with multiple users and an admin panel,
-                            built using the Django web framework. It utilizes a
-                            Postgres database hosted through Koyeb and a third party
-                            app to serve media files.
+                            This is a simple JavaScript app that loads data from an external API 
+                            and enables the viewing of data points in detail.
                         </p>
-                        <p>
-                            Technologies: Python, Django, virtualenvwrapper, pip,
-                            SQLite3, PostgreSQL, pandas, matplotlib, Cloudinary,
-                            Koyeb, WhiteNoise
-                        </p>
+                        <p>Technologies: JavaScript, Bootstrap, jQuery</p>
                     </dialog>
                 </div>
             </div>
