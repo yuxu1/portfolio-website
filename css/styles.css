@@ -1,7 +1,8 @@
 :root {
     --text-color: #2b2b2b;
-    --primary-color: #07c4ce;
+    --primary-color: #609A9D;
     --secondary-color: #6c5291;
+    --secondary-color-darker: #4A3360;
     --primary-color-darker: #077085;
     --light-background-color: #e2f7f9;
     --dark-background-text-color: #fff;
@@ -100,22 +101,42 @@ a:active {
     text-decoration: none;
 }
 
-.profile__portrait {
-    float: left;
-    width: 250px;
-    margin-right: 40px;
+.portrait-container {
+    margin: 20px;
+    max-width: 40%;
+}
+
+.portrait-container img {
+    min-width: 200px;
+    max-width: 80%;
     border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .profile,
 .about {
-    max-width: 70%;
+    max-width: 75%;
     margin: 0 auto;
     text-align: center;
 }
 
+.profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.profile-text {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
 .about-summary {
     text-align: left;
+    display: flex;
+    flex-direction: column;
 }
 
 .page-header {
@@ -237,6 +258,9 @@ a:active {
     .project-list {
         grid-template-columns: 1fr;
     }
+    .profile {
+        flex-direction: column;
+    }
 }
 
 .project-screenshots img {
@@ -247,11 +271,12 @@ a:active {
 }
 
 .project-links {
+    max-height: 15%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 15px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .sf-graphic {
@@ -310,15 +335,7 @@ a:active {
 
 .toolbelt li {
     float:left;
-    width: 50%;
-}
-
-#resume-button-view {
-    margin-top: 25px;
-}
-
-#resume-button-download {
-    background-color: var(--secondary-color);
+    width: 33%;
 }
 
 dialog {
@@ -337,6 +354,7 @@ dialog {
     flex-direction:row;
     justify-content: space-between;
     padding: 10px;
+    height: 28%;
 }
 
 #expand-button {
@@ -361,4 +379,23 @@ dialog {
 
 .app-link {
     background-color: var(--secondary-color);
+}
+
+.resume-buttons {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+#resume-button-view {
+    margin: 20px;
+}
+
+#resume-button-download {
+    margin: 20px;
+    background-color: var(--secondary-color);
+}
+
+#case-study-button {
+    background-color: var(--secondary-color-darker);
 }
